@@ -1,0 +1,10 @@
+main: net.ak1cec0ld.plugins.timetracker.TimeTracker
+name: TimeTracker
+api-version: 1.14
+version: 1
+author: 1cec0ld
+description: No Description
+prefix: TT
+commands:
+  timetracker:
+    description: Lets you see how long you've been playing for x time
