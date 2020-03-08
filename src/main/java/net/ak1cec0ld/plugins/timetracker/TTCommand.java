@@ -42,7 +42,7 @@ public class TTCommand implements CommandExecutor {
         long seconds = TimeUnit.MILLISECONDS.toSeconds(duration)-TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration));
         //long millis  = TimeUnit.MILLISECONDS.toMillis(duration)-TimeUnit.SECONDS.toMillis(TimeUnit.MILLISECONDS.toSeconds(duration));
 
-        return String.format("%dm %ds %dms", minutes, seconds/*, millis*/);
+        return String.format("%dm %ds", minutes, seconds/*, millis*/);
     }
     private static Player getPlayerFromString(String input){
         for(Player each: Bukkit.getOnlinePlayers()){
